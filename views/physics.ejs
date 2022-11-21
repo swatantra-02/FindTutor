@@ -1,0 +1,31 @@
+<div style="margin-bottom: 60%;">
+    <%-include("partials/header");-%>
+</div>
+
+<div style="margin: 5%;">
+
+    <h2 style="text-align: center;">All Posts</h2>
+    <div class="row">
+        <% posts.forEach(function(post){ %>
+
+            <div class="col-12 col-md-12 col-lg-3" style="margin: 1% 2%;">
+                <div class="card text-white text-center bg-dark pb-2">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <%=post.subject%>
+                        </h3>
+                        <p class="lead">
+                            <%=post.content.substring(0, 50) + " ..." %>
+                        </p>
+                        <a href="/posts/<%=post._id%>" class="btn btn-warning text-dark">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+
+
+
+    <%- include("partials/footer"); -%>
+

@@ -1,0 +1,20 @@
+<%-include("partials/header");-%>
+
+
+    <h3 style="margin-top: 10%;">Post</h3>
+    <form class="" action="/review" method="post">
+        <div class="form-group">
+
+           
+            <label>Name</label>
+            <input class="form-control" type="text" name="name" required="true">
+
+            <label>Enter image URL</label>
+            <input class="form-control" type="text" name="image" required="true">
+           
+
+            <label>Discription</label>
+            <textarea class="form-control" type="text" name="con" required="true"></textarea>
+    </div>
+            <button class="btn btn-warning" type="submit" name="button" style="margin-top: 2%;">Publish</button>
+    </form>
