@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Tutor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<!-- Nav Barr -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand"><span class="text-warning">FIND</span>TUTOR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form style="margin: 15%;" action="/register" method="POST">
+    <div class="mb-3">
+        <h5 style="margin-left: 40%; font-style: initial; font-size: 300%;">Sign Up!!</h5>
+        <label for="exampleInputEmail1" class="form-label">UserName</label>
+        <input  class="form-control" name="username">
+       
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password">
+    </div>
+    <button type="submit" class="btn btn-warning" style="width: 100%;">Submit</button>
+    <a class="btn btn-secondary" href="/login" style="width: 100%; margin-top: 1%;">Login</a>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<%- include("partials/footer"); -%>

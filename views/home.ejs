@@ -1,0 +1,327 @@
+
+<div style="margin-bottom: 10%;">
+  <%-include("partials/header");-%>
+</div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Nav Barr -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><span class="text-warning">FIND</span>TUTOR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+             <a class="nav-link" href="/">home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/Compose">find Tutor</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                All Posts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="/physics">Physics</a></li>
+                 
+                <li><a class="dropdown-item" href="/chemistry">Chemistry</a></li>
+               
+                <li><a class="dropdown-item" href="/maths">Mathematics</a></li>
+                
+                
+                <li><a class="dropdown-item" href="/biology">Biology</a></li>
+              </ul>
+            </li>
+           
+          
+        
+          
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="">SignedIn as <span class="text-warning"><%=currentUser%></span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+    
+    
+    
+          </ul>
+    
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img2.jpg" style="height: 110%;" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>LEARN FROM THE BEST</h5>
+          <p>Post now to clear all of your doubts and get ready for neet and jee exams.</p>
+          <p><a href="#postnow" class="btn btn-warning mt-3">Post Now</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img1.jpg" style="height: 100%;" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>LETS SEE ALL THE POST</h5>
+          <p>see all the post made by the students</p>
+          <p><a href="#services" class="btn btn-warning mt-3">See all Post</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpg" style="height: 100%;" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Reviews</h5>
+          <p>See what our students say about us.</p>
+          <p><a href="#team" class="btn btn-warning mt-3">Review</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Compose -->
+
+  <section id="postnow" class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" col-md-12 col-12>
+          <div class="about-img">
+            <img src="img/img1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-text">
+            <h2>We provide Best Quality <br> Tutor</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen
+              book.</p>
+            <a href="/Compose" class="btn btn-warning">POST</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+ <br style="width: 150%;">
+        <!-- Subject section -->
+        
+        <section id="services" class="services section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                  <h2>All Posts</h2>
+                  <p>Click on button of each cards to see all the previous post of that subject.</p>
+                </div>
+              </div>
+        
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="img/math.jfif" class="sub_img"> </img>
+                    </div>
+                    <h3 class="card-title">Maths</h3>
+                    <p class="lead">See All the previous post of Mathematics. </p>
+                    <a href="/maths" class="btn btn-warning">Explore</a>
+                  </div> 
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="img/physics.jpg" class="sub_img"> </img>
+                    </div>
+                    <h3 class="card-title">Physics</h3>
+                    <p class="lead">See All the previous post of Physics.</p>
+                    <a href="/physics" class="btn btn-warning">Explore</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="img/chemistry.jpg" class="sub_img"> </img>
+                    </div>
+                    <h3 class="card-title">Chemistry</h3>
+                    <p class="lead">See All the previous post of Chemistry.</p>
+                  <a href="/chemistry" class="btn btn-warning">Explore</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-12 col-md-12 col-lg-3">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="img/biology.png" class="sub_img"> </img>
+                    </div>
+                    <h3 class="card-title">Biology</h3>
+                    <p class="lead">See All the previous post of Biology.</p>
+                      <a href="/biology" class="btn btn-warning">Explore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+            <!-- TEAM -->
+            
+            <section id="team" class="team section-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                      <h2>Reviews</h2>
+                      <p>Lets See what Find Tutor users are saying!!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="https://wallpapercave.com/wp/wp6638604.jpg" alt="" class="review_img">
+                        <h3 class="card-title py-2">Shashank</h3>
+                        <p class="card-text">Great Platform. I got best tutor through it. </p>
+                        <p class="socials">
+                          <i class="fa-brands fa-facebook"></i>
+                          <i class="bi bi-facebook text-dark mx-1"></i>
+                          <i class="bi bi-linkedin text-dark mx-1"></i>
+                          <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+            
+            
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="https://images.news18.com/ibnlive/uploads/2022/07/jee-mains-topper.jpg" alt="" class="review_img">
+                        <h3 class="card-title py-2">Harshit</h3>
+                        <p class="card-text">Amazing experiance, help me connect with top Tutors.</p>
+                        <p class="socials">
+                          <i class="fa-brands fa-facebook"></i>
+                          <i class="bi bi-facebook text-dark mx-1"></i>
+                          <i class="bi bi-linkedin text-dark mx-1"></i>
+                          <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+            
+            
+                      </div>
+                    </div>
+                  </div>
+            
+               
+                  <% posts.forEach(function(post){ %>
+                  <!-- <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src=<%=post.image%> alt="" class="review_img">
+                        <h3 class="card-title py-2"><%=post.name%></h3>
+                          
+                        <p class="card-text"><%=post.con%></p>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="<%=post.image%>" alt="" class="review_img">
+                        <h3 class="card-title py-2"><%=post.name%></h3>
+                        <p class="card-text"><%=post.con%></p>
+                      </div>
+                    </div>
+                  </div>
+
+                 <% }) %>
+                </div>
+             
+            
+            </section>
+          
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer"); -%>
+
+
+
+       
+           
+
+      
+    
+       
+  
+  
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
+

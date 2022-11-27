@@ -1,0 +1,48 @@
+
+
+  <%-include("partials/header");-%>
+
+
+    <h3 style="margin-top: 10%;">Post</h3>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+       
+        <label>Subject</label>
+        <div class="input-group mb-3">
+          <select class="form-select" id="inputGroupSelect02" name="postSubject" required="true">
+            <option selected>Choose...</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Maths">Maths</option>
+            <option value="Biology">Biology</option>
+          </select>
+        </div>
+        <label>Name</label>
+        <input class="form-control" type="text" name="postName" required="true">
+
+        <label>Email</label>
+        <input class="form-control" type="email" name="postEmail" required="true">
+        <label>Estimated Fee</label>
+        <input class="form-control" type="text" name="postFee" required="true">
+
+        <label>Difficulty</label>
+        <div class="input-group mb-3" >
+          <select class="form-select" id="inputGroupSelect02" name="postDifficulty" required="true">
+            <option selected>Choose...</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+          
+        </div>
+        
+        <!-- <label>Difficulty</label>
+        <input class="form-control" type="text" name="postDifficulty"> -->
+
+        <label>Discription</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30" required="true"></textarea>
+      </.div>
+      <button class="btn btn-warning" type="submit" name="button" style="margin-top: 2%;">Publish</button>
+    </form>
+
+
